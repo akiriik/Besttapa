@@ -72,6 +72,12 @@ void BWC::setup(void){
         pins[5] = 5;   // dsp cs
         
     }
+    pins[0] = 4;   
+    pins[1] = 12;  
+    pins[2] = 13;  
+    pins[3] = 14;  
+    pins[4] = 16;  
+    pins[5] = 5;
     // Serial.printf("Cio loaded: %d, dsp model: %d\n", ciomodel, dspmodel);
     for(int i = 0; i < 8; i++)
     {
