@@ -64,14 +64,12 @@ void BWC::setup(void){
     std::optional<Power> power_levels = {};
     
     if(!_loadHardware(ciomodel, dspmodel, pins, power_levels)){
-        pins[0] = D1;
-        pins[1] = D2;
-        pins[2] = D3;
-        pins[3] = D4;
-        pins[4] = D5;
-        pins[5] = D6;
-        pins[6] = D7;
-        pins[7] = D8;
+        pins[0] = 4;   // data 
+        pins[1] = 12;  // clk
+        pins[2] = 13;  // cs
+        pins[3] = 14;  // dsp data
+        pins[4] = 16;  // dsp clk  
+        pins[5] = 5;   // dsp cs
         
     }
     // Serial.printf("Cio loaded: %d, dsp model: %d\n", ciomodel, dspmodel);
